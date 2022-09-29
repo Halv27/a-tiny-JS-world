@@ -14,6 +14,7 @@ const INHABITANT = {
     human: 'human',
     dog: 'dog',
     cat: 'cat',
+    superhuman: 'superhuman',
   },
   gender: {
     male: 'male',
@@ -57,12 +58,12 @@ const cat = {
   friends: ['Penny', 'Rex', 'Sarah'],
 };
 const catWoman = {
-  species: INHABITANT.species.human,
+  ...cat,
+  species: INHABITANT.species.superhuman,
   name: 'Sarah',
   gender: INHABITANT.gender.female,
   legs: 2,
   hands: 2,
-  saying: cat.saying,
   friends: ['Sheldon', 'Charlie'],
 };
 // ======== OUTPUT ========
